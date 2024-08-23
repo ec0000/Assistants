@@ -1,0 +1,97 @@
+{
+  "status": "healthy",
+  "version": "1.0.0",
+  "supported_apis": [
+    {
+      "path": "/health",
+      "name": "health_check",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "path": "/assistants/",
+      "name": "create_assistant",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "path": "/assistants/",
+      "name": "read_assistants",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "path": "/assistants/{assistant_id}",
+      "name": "read_assistant",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "path": "/assistants/{assistant_id}",
+      "name": "update_assistant",
+      "methods": [
+        "PUT"
+      ]
+    },
+    {
+      "path": "/assistants/{assistant_id}",
+      "name": "delete_assistant",
+      "methods": [
+        "DELETE"
+      ]
+    },
+    {
+      "path": "/knowledge-base/",
+      "name": "create_knowledge_base",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "path": "/knowledge-base/{assistant_id}",
+      "name": "read_knowledge_base",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "path": "/knowledge-base/{kb_id}",
+      "name": "delete_knowledge_base",
+      "methods": [
+        "DELETE"
+      ]
+    },
+    {
+      "path": "/webhooks/",
+      "name": "create_webhook",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "path": "/webhooks/{assistant_id}",
+      "name": "read_webhooks",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "path": "/webhooks/{webhook_id}",
+      "name": "update_webhook",
+      "methods": [
+        "PUT"
+      ]
+    },
+    {
+      "path": "/webhooks/{webhook_id}",
+      "name": "delete_webhook",
+      "methods": [
+        "DELETE"
+      ]
+    }
+  ]
+}

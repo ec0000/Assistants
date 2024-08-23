@@ -1,0 +1,26 @@
+# __init__.py
+# backend/__init__.py
+# This can be left empty or you can add version information
+__version__ = "0.1.0"
+from .database import init_db, get_db
+
+# tests/__init__.py
+
+# models/__init__.py
+# backend/models/__init__.py
+from .assistant import AssistantBase, AssistantCreate, AssistantUpdate, AssistantInDB
+from .knowledge_base import KnowledgeBaseBase, KnowledgeBaseCreate, KnowledgeBaseInDB
+from .webhook import WebhookBase, WebhookCreate, WebhookUpdate, WebhookInDB
+
+# crud/__init__.py
+# backend/crud/__init__.py
+from . import assistants
+from . import knowledge_base
+from . import webhooks
+
+# api/__init__.py
+# backend/api/__init__.py
+from .assistants import router as assistants_router
+from .knowledge_base import router as knowledge_base_router
+from .webhooks import router as webhooks_router
+
